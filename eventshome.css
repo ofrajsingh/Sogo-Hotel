@@ -1,0 +1,102 @@
+.events-box {
+  background: #f2f4fb;
+  text-align: center;
+  padding: 100px;
+}
+
+.events-box > h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-family: "Playfair Display", times, serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.events-box > p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.events-container img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.events-container > div > div {
+  background: white;
+  padding: 25px;
+  text-align: left;
+}
+
+.events-container > div > div > p {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: grey;
+}
+
+.events-container > div > div > h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.events-container > div > div > h3:hover {
+  color: #ffaa34;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .events-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .events-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .events-box > p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .events-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .events-box > p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

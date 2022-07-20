@@ -1,0 +1,131 @@
+.containerTwo{
+    background: #f2f4fb;
+}
+.sectionTwo {
+  padding: 4rem 0;
+  display: flex;
+  /* border: 5px solid black; */
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  background: #f2f4fb;
+}
+.sectionTwo .left2 {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid red; */
+  width: 35%;
+}
+.sectionTwo .heading2 {
+  padding-bottom: 0.5em;
+  font-size: 60px;
+  font-family: "Playfair Display", times, serif;
+  font-weight: 700;
+  color: black;
+}
+
+.sectionTwo p {
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6c757d;
+  padding-bottom: 1.5em;
+}
+
+.sectionTwo button {
+  background-color: #ffaa34;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: white;
+  border-width: 0;
+  text-decoration: none;
+}
+
+.sectionTwo span {
+  font-style: italic;
+}
+
+.sectionTwo a {
+  color: #ff9a0e;
+  text-decoration: none;
+}
+
+.right2 {
+  /* border: 5px solid aqua; */
+  width: 50%;
+}
+.sectionTwo .right2 img {
+  height: 400px;
+  width: 500px;
+}
+
+.sectionTwo .three {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 987px) {
+  .sectionTwo {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .sectionTwo .left2 {
+    display: block;
+    width: 100%;
+  }
+  .sectionTwo .heading2 {
+    padding-bottom: 0.5em;
+    font-size: 60px;
+    font-family: "Playfair Display", times, serif;
+    font-weight: 700;
+    color: black;
+  }
+
+  .sectionTwo p {
+    font-family: "Roboto", arial, sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6c757d;
+    padding-bottom: 1.5em;
+  }
+
+  .sectionTwo button {
+    background-color: #ffaa34;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: white;
+    border-width: 0;
+    text-decoration: none;
+  }
+
+  .sectionTwo span {
+    font-style: italic;
+  }
+
+  .sectionTwo a {
+    color: #ff9a0e;
+    text-decoration: none;
+  }
+
+  .right2 {
+    width: 100%;
+  }
+  .sectionTwo .right2 img {
+    height: 400px;
+    width: 500px;
+  }
+
+  .sectionTwo .three {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+}

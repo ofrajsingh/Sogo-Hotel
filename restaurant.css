@@ -1,0 +1,371 @@
+* {
+  border: 0px solid red;
+}
+body {
+  padding: 0;
+  margin: 0;
+  /*   background: #fff;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6c757d;
+  position: relative;*/
+}
+.bg-image.overlay {
+  position: relative;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section {
+  padding: 7em 0;
+  height: fit-content;
+}
+.bg-image:before {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+}
+::selection {
+  color: #fff;
+  background: #ffba5a;
+}
+.bg-image.overlay > .container {
+  position: relative;
+  z-index: 3;
+}
+.container {
+  width: 98%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-center {
+  text-align: center !important;
+}
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.row {
+  border: 0px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  text-align: left;
+}
+.col-md-7 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.heading {
+  font-size: 60px;
+  font-family: "Playfair Display", times, serif;
+  font-weight: 700;
+}
+.text-white {
+  color: #fff !important;
+}
+
+h2 {
+  margin-top: 0;
+}
+p {
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.food-menu-tabs {
+  text-align: center;
+}
+
+.food-menu-tabs .nav-tabs {
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: none;
+}
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.food-menu-tabs .nav-tabs li {
+  display: inline-block;
+}
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+button:focus {
+  border-bottom: 3px solid white;
+  /* text-decoration: underline; */
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.tablinks {
+  padding: 0.5rem 1rem;
+  border-style: none;
+  letter-spacing: 0.2em;
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #ffba5a;
+  padding: 8 16 8 16;
+}
+
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+.tab-content > .tabcontent {
+  display: none;
+}
+.text-left {
+  text-align: left !important;
+}
+
+.col-md-7 {
+  position: relative;
+  width: 45%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-6 {
+  width: 38%;
+}
+.text-primary {
+  color: #ffba5a !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.d-block {
+  display: block !important;
+}
+.h4,
+h4 {
+  font-size: 1.5rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: "Playfair Display", times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.item {
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.75rem;
+  font-family: "Playfair Display", times, serif;
+}
+.text-opacity-7 {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 315px) {
+  .container {
+    width: 90%;
+    max-width: 280px;
+  }
+  .col-md-6 {
+    width: 90%;
+  }
+  .col-md-7 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .heading {
+    font-size: 45px;
+    font-family: "Playfair Display", times, serif;
+    font-weight: 700;
+  }
+  .section {
+    padding: 3em 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    max-width: 540px;
+  }
+  .col-md-6 {
+    width: 95%;
+  }
+  .col-md-7 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .heading {
+    font-size: 40px;
+    font-family: "Playfair Display", times, serif;
+    font-weight: 700;
+  }
+  .section {
+    padding: 3em 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+    max-width: 720px;
+  }
+  .col-md-6 {
+    padding-left: 15px;
+    width: 45%;
+  }
+  .col-md-7 {
+    position: relative;
+    width: 60%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .heading {
+    font-size: 40px;
+    font-family: "Playfair Display", times, serif;
+    font-weight: 700;
+  }
+  .section {
+    padding: 3em 0;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+    max-width: 1048px;
+  }
+  .col-md-6 {
+    padding-left: 15px;
+    width: 48%;
+  }
+  .col-md-7 {
+    position: relative;
+    width: 60%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .heading {
+    font-size: 60px;
+    font-family: "Playfair Display", times, serif;
+    font-weight: 700;
+  }
+  .section {
+    padding: 3em 0;
+  }
+}

@@ -1,0 +1,339 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* section Four */
+.sectionFour {
+  background-color: #f2f4fb;
+  padding: 7em 0;
+  width: 100%;
+}
+.sectionFourContainer1 {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.sectionFourContainer1 p {
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6c757d;
+  padding: 1.5em;
+}
+.sectionFourContainer2 {
+  padding: 3em 0;
+  /* border: 2px solid red; */
+}
+
+/* mouse animation */
+.mouse {
+  margin: 50px auto;
+  width: 30px;
+}
+.mouse-icon {
+  width: 25px;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.mouse-wheel {
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+.sectionFourContainer2 .mySlides {
+  display: none;
+}
+.sectionFourContainer2 img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.sectionFourContainer2 .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Position the "next button" to the right */
+.sectionFourContainer2 .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.sectionFourContainer2 .prev:hover,
+.sectionFourContainer2 .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.sectionFourContainer2 .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.sectionFourContainer2 .active,
+.sectionFourContainer2 .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.sectionFourContainer2 .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+.heading2 {
+  font-size: 60px;
+  font-family: "Playfair Display", times, serif;
+  font-weight: 700;
+  color: black;
+}
+
+/* section Six */
+/* .sectionSix {
+  padding: 7em 0;
+  width: 100%;
+  text-align: center;
+} */
+.testinomialOne,
+.testinomialTwo {
+  height: 320px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid aqua; */
+  padding: 2em;
+}
+/* .sectionSix img {
+  width: 70px;
+  border-radius: 50%;
+} */
+/* .sectionSix p {
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6c757d;
+  padding: 1em;
+} */
+/* .one {
+  width: 30%;
+} */
+
+/* only media queries  */
+@media (max-width: 1000px) {
+  .sectionFourContainer1 {
+    width: 80%;
+  }
+  .sectionFourContainer1 .heading2 {
+    font-size: 30px;
+    font-family: "Playfair Display", times, serif;
+    font-weight: 500;
+    color: black;
+  }
+  .sectionFourContainer1 p {
+    font-family: "Roboto", arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #6c757d;
+    padding: 1.5em;
+  }
+  .sectionFourContainer2 {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+/* white-box css starts */
+
+.white-box {
+  display: grid;
+  grid-template-columns: 25% 25% 10% 10% 25%;
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-gap: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 10px black;
+  position: relative;
+  bottom: 60px;
+}
+
+.white-box h3 {
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.white-box input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #ced4da;
+}
+
+.white-box select {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #ced4da;
+}
+
+.white-box button {
+  width: 200px;
+  height: 45px;
+  border-radius: 32px;
+  background: #ffba5a;
+  border: 0px;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 1700px) and (min-width: 1250px) {
+  .white-box {
+    /* display: grid;
+    grid-template-columns: 25% 25% 10% 10% 25%; */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* grid-gap: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 10px black; */
+  }
+}
+@media (max-width: 1250px) and (min-width: 760px) {
+  .white-box {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    position: relative;
+    bottom: 130px;
+  }
+}
+@media (max-width: 760px) {
+  .white-box {
+    display: grid;
+    grid-template-columns: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+  }
+  .white-box button {
+    width: 100%;
+    height: 45px;
+    border-radius: 32px;
+    background: #ffba5a;
+    border: 0px;
+    color: white;
+    margin-top: 30px;
+  }
+}
+
+/* white-box css ends */
+.form-cantrol input {
+  outline: none;
+}

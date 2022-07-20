@@ -1,0 +1,260 @@
+/* navbar css starts */
+#navbar {
+background-color: white;
+/* background: transparent; */
+position: fixed;
+top: -100px;
+width: 100%;
+height: 90px;
+transition: top 0.3s;
+box-shadow: 0px 0px 4px grey;
+z-index: 2;
+}
+
+
+#navbar a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+
+text-decoration: none;
+margin-left: 200px;
+margin-top: 10px;
+}
+
+.ham-container {
+display: inline-block;
+cursor: pointer;
+float: right;
+
+margin-right: 10%;
+margin-top: 20px;
+/* z-index: 20; */
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: grey;
+margin: 6px 0;
+transition: 0.4s;
+border-radius: 5px;
+/* z-index: 20; */
+}
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+.static-ham {
+  position: absolute;
+  /* margin-top: 40px; */
+  /* float: right; */
+  top: 40px;
+
+  /* border: 1px solid red; */
+  right: 10%;
+  /* border: 1px solid red; */
+}
+.static-ham .bar1, .static-ham .bar2, .static-ham .bar3 {
+width: 35px;
+height: 5px;
+background-color: white;
+margin: 6px 0;
+transition: 0.4s;
+border-radius: 5px;
+}
+/* navbar css ends (check media query also though) */
+
+.upper1{
+  margin: 0;
+  width:100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.4)url("Images/back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  position: relative;
+  text-align: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 5rem;
+  /* margin: auto; */
+}
+#sub-heading>span{
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight:bolder;
+}
+#sub-heading>span>a{
+  text-decoration: none;
+  color: #FFBA5A;
+}
+#sub-heading>span>a:hover{
+  text-decoration: none;
+  color: white;
+}
+/* .center-text{
+  position: absolute;
+  top: 300px;
+
+  left: 45%;
+
+
+  text-align: center;
+
+} */
+.upper1 .center-text{
+  text-align: center;
+  position: relative;
+  top: 300px;
+}
+
+#heading{
+  margin-bottom: 10px;
+}
+
+
+#sub-heading{
+  font-family: sans-serif;
+
+}
+.logo{
+  position: absolute;
+  top: 40px;
+  left: 200px;
+
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+  font-size: 125%;
+}
+
+/* mouse scroll indicator code starts */
+.mouse{
+  width: 50px;
+  position: absolute;
+  left: calc(98% / 2);
+  bottom: 150px;
+
+
+}
+
+.mouse-icon{
+   width: 25px;
+   height: 45px;
+   border: 2px solid white;
+   border-radius: 15px;
+   cursor: pointer;
+   position: relative;
+   text-align: center;
+}.mouse-wheel{
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+ -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+@-webkit-keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+}@-moz-keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+}@keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+}
+/* mouse scroll indicator code finishes */
+
+@media (min-width: 1000px) and (max-width: 1400px){
+
+  .logo{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+
+  }
+  #navbar a{
+    margin-left: 100px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+
+  .logo{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+
+  }
+  #navbar a{
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 600px){
+
+  .logo{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+  }
+  #navbar a{
+    margin-left: 20px;
+  }
+
+}
