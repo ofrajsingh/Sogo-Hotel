@@ -4,13 +4,11 @@ Sogo Hotel is a website that allows users to book hotel rooms online.
 
 
 ## How to run project locally?
-Just have to clone the repository or download the zip version and then open home.html file with any browser or click on this link <a href="https://karthik257.github.io/Sogo-Hotel-Website/home.html">Go Live</a>.
+Just have to clone the repository or download the zip version and then open home.html file with any browser or click on this link <a href="https://github.com/ofrajsingh/Sogo-Hotel">Go Live</a>.
 
-## Developers
+## Developer
 
-- [Karthik S M](https://github.com/karthik257)
-- [Rishi Singh](https://github.com/rishisingh1110)
-- [Nitin Maharshi](https://github.com/NitinMaharshi)
+- [Raj Singh](https://github.com/ofrajsingh)
 
 
 ## Features
